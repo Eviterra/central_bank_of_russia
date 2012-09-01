@@ -1,0 +1,23 @@
+== Introduction
+
+This gem downloads the exchange rates from the Central Bank of Russia.
+
+== Installation
+
+ $ gem install central_bank_of_russia
+
+== Dependencies
+
+* nokogiri
+* money
+
+== Usage
+
+  bank = CentralBankOfRussia.new.update_rates(Date.today)
+  Money.default_bank = CentralBankOfRussia.new.update_rates(Date.today)
+  1.to_money("USD").exchange_to("RUB")
+  bank.exchange_with("100 RUB".to_money, "EUR")
+
+== Copyright
+
+Copyright (c) 2012 Eviterra. See LICENSE for details.
