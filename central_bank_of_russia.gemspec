@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name         = "central_bank_of_russia"
-  s.version      = "0.0.1"
+  s.version      = "0.1.0"
   s.platform     = Gem::Platform::RUBY
   s.authors      = ["Alexey 'codesnik' Trofimenko"]
   s.email        = ["aronaxis@gmail.com"]
